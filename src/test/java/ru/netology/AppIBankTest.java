@@ -37,7 +37,7 @@ public class AppIBankTest {
     }
 
     @Test
-    public void shouldGiveErrorWhenTransMoreThanAccountBalance() { //после выполения верхнего теста на счетах должно быть 9т и 11 тыс соответственнно, и этот тест должен падать
+    public void shouldGiveErrorWhenTransMoreThanAccountBalance() {
         int amountToTransfer = 10000;
         var loginPage = open("http://localhost:9999", LoginPage.class);
         var authUser = DataGen.getUserHardCode();
